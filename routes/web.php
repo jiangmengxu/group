@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+    Route::get('Goods/GoodsList','Goods/GoodsListController@index');//商品首页
