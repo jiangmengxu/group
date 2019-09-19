@@ -450,7 +450,7 @@ $(function(){
                     return false;
                 } 
             if(u_pwd==''){
-                    alert('密码不能为空');
+                    alert('您的密码不能为空');
                     return false;
                 } 
             $.ajax({
