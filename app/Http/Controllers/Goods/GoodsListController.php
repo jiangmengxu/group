@@ -10,7 +10,7 @@ class GoodsListController extends Controller
     public function index()
     {
         $goodsdata = \DB::table('g_goods')->get();
-//        dd($data);
+//        dd($goodsdata);
         return view('Goods/GoodsList',['goodsdata'=>$goodsdata]);
     }
 }
