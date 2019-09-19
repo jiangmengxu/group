@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 
+<<<<<<< HEAD
 
 Route::prefix('goods')->group(function(){
     Route::get('/detail','Goods\\GoodsDetailController@goodsDetail');   //商品详情
 });
+=======
+    Route::get('Goods/GoodsList','Goods/GoodsListController@index');//商品首页
+>>>>>>> 9ce789906a830002e5eb5e0278331f55ad87c531
