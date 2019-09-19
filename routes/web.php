@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 
-    Route::get('Goods/GoodsList','Goods/GoodsListController@index');//商品首页
+    Route::get('Goods/GoodsList','Goods\\GoodsListController@index');//商品首页

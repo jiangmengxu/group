@@ -10,7 +10,7 @@
     <meta name="HandheldFriendly" content="True">
 
     <link rel="stylesheet" href="/mstore/css/materialize.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/mstore/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/mstore/css/normalize.css">
     <link rel="stylesheet" href="/mstore/css/owl.carousel.css">
     <link rel="stylesheet" href="/mstore/css/owl.theme.css">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/mstore/css/animate.css">
     <link rel="stylesheet" href="/mstore/css/style.css">
 
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="/mstore/img/favicon.png">
 
 </head>
 <body>
@@ -41,7 +41,7 @@
 <div class="side-nav-panel-right">
     <ul id="slide-out-right" class="side-nav side-nav-panel collapsible">
         <li class="profil">
-            <img src="img/profile.jpg" alt="">
+            <img src="/mstore/img/profile.jpg" alt="">
             <h2>John Doe</h2>
         </li>
         <li><a href="setting.html"><i class="fa fa-cog"></i>Settings</a></li>
@@ -262,7 +262,7 @@
                     <div class="cart-1">
                         <div class="row">
                             <div class="col s5">
-                                <img src="img/cart-menu1.png" alt="">
+                                <img src="/mstore/img/cart-menu1.png" alt="">
                             </div>
                             <div class="col s7">
                                 <h5><a href="">Fashion Men's</a></h5>
@@ -297,7 +297,7 @@
                     <div class="cart-2">
                         <div class="row">
                             <div class="col s5">
-                                <img src="img/cart-menu2.png" alt="">
+                                <img src="/mstore/img/cart-menu2.png" alt="">
                             </div>
                             <div class="col s7">
                                 <h5><a href="">Fashion Men's</a></h5>
@@ -367,7 +367,7 @@
 
     <ul class="slides">
         <li>
-            <img src="img/slide1.jpg" alt="">
+            <img src="/mstore/img/slide1.jpg" alt="">
             <div class="caption slider-content  center-align">
                 <h2>WELCOME TO MSTORE</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
@@ -375,7 +375,7 @@
             </div>
         </li>
         <li>
-            <img src="img/slide2.jpg" alt="">
+            <img src="/mstore/img/slide2.jpg" alt="">
             <div class="caption slider-content center-align">
                 <h2>JACKETS BUSINESS</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
@@ -383,7 +383,7 @@
             </div>
         </li>
         <li>
-            <img src="img/slide3.jpg" alt="">
+            <img src="/mstore/img/slide3.jpg" alt="">
             <div class="caption slider-content center-align">
                 <h2>FASHION SHOP</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
@@ -462,7 +462,7 @@
         <div class="row">
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new1.png" alt="">
+                    <img src="/mstore/img/product-new1.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -472,7 +472,7 @@
             </div>
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new2.png" alt="">
+                    <img src="/mstore/img/product-new2.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -484,7 +484,7 @@
         <div class="row margin-bottom">
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new3.png" alt="">
+                    <img src="/mstore/img/product-new3.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -494,7 +494,7 @@
             </div>
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new4.png" alt="">
+                    <img src="/mstore/img/product-new4.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -530,7 +530,7 @@
         <div class="row">
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new1.png" alt="">
+                    <img src="/mstore/img/product-new1.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -540,7 +540,7 @@
             </div>
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new2.png" alt="">
+                    <img src="/mstore/img/product-new2.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -552,7 +552,7 @@
         <div class="row">
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new3.png" alt="">
+                    <img src="/mstore/img/product-new3.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
@@ -562,7 +562,7 @@
             </div>
             <div class="col s6">
                 <div class="content">
-                    <img src="img/product-new4.png" alt="">
+                    <img src="/mstore/img/product-new4.png" alt="">
                     <h6><a href="">Fashion Men's</a></h6>
                     <div class="price">
                         $20 <span>$28</span>
