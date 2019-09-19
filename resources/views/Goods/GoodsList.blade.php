@@ -265,7 +265,7 @@
                                 <img src="/mstore/img/cart-menu1.png" alt="">
                             </div>
                             <div class="col s7">
-                                <h5><a href="">Fashion Men's</a></h5>
+                                <h5><a href=""></a></h5>
                             </div>
                         </div>
                         <div class="row quantity">
@@ -460,129 +460,133 @@
             <div class="divider-bottom"></div>
         </div>
         <div class="row">
+            @foreach ($goodsdata as $g)
             <div class="col s6">
+
                 <div class="content">
                     <img src="/mstore/img/product-new1.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
+                    <h6><a href="Goods/GoodsDetail?id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
                     <div class="price">
-                        $20 <span>$28</span>
+                        {{$g->shop_price}}
                     </div>
-                    <button class="btn button-default">ADD TO CART</button>
+                    <button class="btn button-default" >ADD TO CART</button>
                 </div>
+
             </div>
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new2.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
+            @endforeach
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new2.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
-        <div class="row margin-bottom">
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new3.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new4.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
+{{--        <div class="row margin-bottom">--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new3.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new4.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 </div>
 <!-- end product -->
 
-<!-- promo -->
-<div class="promo section">
-    <div class="container">
-        <div class="content">
-            <h4>PRODUCT BUNDLE</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <button class="btn button-default">SHOP NOW</button>
-        </div>
-    </div>
-</div>
-<!-- end promo -->
+{{--<!-- promo -->--}}
+{{--<div class="promo section">--}}
+{{--    <div class="container">--}}
+{{--        <div class="content">--}}
+{{--            <h4>PRODUCT BUNDLE</h4>--}}
+{{--            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>--}}
+{{--            <button class="btn button-default">SHOP NOW</button>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+{{--<!-- end promo -->--}}
 
-<!-- product -->
-<div class="section product">
-    <div class="container">
-        <div class="section-head">
-            <h4>TOP PRODUCT</h4>
-            <div class="divider-top"></div>
-            <div class="divider-bottom"></div>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new1.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new2.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new3.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="col s6">
-                <div class="content">
-                    <img src="/mstore/img/product-new4.png" alt="">
-                    <h6><a href="">Fashion Men's</a></h6>
-                    <div class="price">
-                        $20 <span>$28</span>
-                    </div>
-                    <button class="btn button-default">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="pagination-product">
-            <ul>
-                <li class="active">1</li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- end product -->
+{{--<!-- product -->--}}
+{{--<div class="section product">--}}
+{{--    <div class="container">--}}
+{{--        <div class="section-head">--}}
+{{--            <h4>TOP PRODUCT</h4>--}}
+{{--            <div class="divider-top"></div>--}}
+{{--            <div class="divider-bottom"></div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new1.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new2.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new3.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col s6">--}}
+{{--                <div class="content">--}}
+{{--                    <img src="/mstore/img/product-new4.png" alt="">--}}
+{{--                    <h6><a href="">Fashion Men's</a></h6>--}}
+{{--                    <div class="price">--}}
+{{--                        $20 <span>$28</span>--}}
+{{--                    </div>--}}
+{{--                    <button class="btn button-default">ADD TO CART</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="pagination-product">--}}
+{{--            <ul>--}}
+{{--                <li class="active">1</li>--}}
+{{--                <li><a href="">2</a></li>--}}
+{{--                <li><a href="">3</a></li>--}}
+{{--                <li><a href="">4</a></li>--}}
+{{--                <li><a href="">5</a></li>--}}
+{{--            </ul>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+{{--<!-- end product -->--}}
 
 <!-- loader -->
 <div id="fakeLoader"></div>

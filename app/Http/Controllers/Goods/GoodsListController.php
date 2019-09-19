@@ -9,6 +9,8 @@ class GoodsListController extends Controller
 {
     public function index()
     {
-        return view('Goods/GoodsList');
+        $goodsdata = \DB::table('g_goods')->get();
+//        dd($data);
+        return view('Goods/GoodsList',['goodsdata'=>$goodsdata]);
     }
 }
