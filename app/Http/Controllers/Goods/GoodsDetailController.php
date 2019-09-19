@@ -13,6 +13,6 @@ class GoodsDetailController extends Controller
         $goods_id = $request->goods_id;
         $data = Goods::where(['goods_id'=>$goods_id])->first()->toArray();
 //        dd($data);
-        return view('goods.goodsDetail',['data'=>$data]);
+        return view('Goods.goodsDetail',['data'=>$data]);
     }
 }
