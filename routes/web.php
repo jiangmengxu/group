@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('/goods')->group(function(){
+    Route::get('index','Goods\\CartListController@index');
+});
