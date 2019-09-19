@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::prefix('goods')->group(function(){
+    Route::get('/detail','Goods\\GoodsDetailController@goodsDetail');   //商品详情
+});
