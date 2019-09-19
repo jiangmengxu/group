@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/mstore/css/fakeLoader.css">
     <link rel="stylesheet" href="/mstore/css/animate.css">
     <link rel="stylesheet" href="/mstore/css/style.css">
-
+    <link rel="stylesheet" href="/mstore/css/page.css">
     <link rel="shortcut icon" href="/mstore/img/favicon.png">
 
 </head>
@@ -465,7 +465,7 @@
 
                 <div class="content">
                     <img src="/mstore/img/product-new1.png" alt="">
-                    <h6><a href="Goods/GoodsDetail?id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
+                    <h6><a href="/Goods/GoodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
                     <div class="price">
                         {{$g->shop_price}}
                     </div>
@@ -474,6 +474,7 @@
 
             </div>
             @endforeach
+                {{ $goodsdata->links() }}
 {{--            <div class="col s6">--}}
 {{--                <div class="content">--}}
 {{--                    <img src="/mstore/img/product-new2.png" alt="">--}}
