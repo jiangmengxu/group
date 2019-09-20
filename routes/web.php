@@ -22,3 +22,15 @@ Route::get('/', function () {
 
     Route::get('Goods/GoodsList','Goods\\GoodsListController@index');//商品首页
     Route::get('Goods/GoodsDetail','Goods\\GoodsDetailController@goodsDetail');//商品详情
+
+
+Route::get('Goods/GoodsCart','Goods\\CartListController@index');
+Route::get('Goods/GoodsList','Goods\\GoodsListController@index');//商品首页
+Route::get('Goods/goodsDetail','Goods\\GoodsDetailController@goodsDetail');   //商品详情
+Route::post('Goods/addCart','Goods\\GoodsDetailController@addCart');   //点击加入购物车
+Route::any('login',"LoginController@login");
+Route::any('logindo',"LoginController@logindo");
+Route::any('code',"LoginController@code");
+Route::any('register',"LoginController@register");
+Route::any('registerdo',"LoginController@registerdo");
+Route::any('index',"LoginController@index");

@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="HandheldFriendly" content="True">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="/mstore/css/materialize.css">
     <link rel="stylesheet" href="/mstore/font-awesome/css/font-awesome.min.css">
@@ -366,54 +367,16 @@
 <div class="pages section">
     <div class="container">
         <div class="shop-single">
-{{--            <img src="/mstore/img/shop-single.png" alt="">--}}
-            <img src="/uploads/{{$data['goods_img']}}" alt="">
+            <img src="/mstore/img/shop-single.png" alt="">
+{{--            <img src="/uploads/{{$data['goods_img']}}" alt="">--}}
             <h5>{{$data['goods_name']}}</h5>
             <div class="price">${{$data['shop_price']}} <span>$28</span></div>
             <p>{{$data['goods_detail']}}</p>
-            <button type="button" class="btn button-default">ADD TO CART</button>
+            <input type="hidden" id="goods_id" value="{{$data['goods_id']}}">
+            <button type="button" id="addCart" class="btn button-default">ADD TO CART</button>
         </div>
-        <div class="review">
-            <h5>1 reviews</h5>
-            <div class="review-details">
-                <div class="row">
-                    <div class="col s3">
-                        <img src="/mstore/img/user-comment.jpg" alt="" class="responsive-img">
-                    </div>
-                    <div class="col s9">
-                        <div class="review-title">
-                            <span><strong>John Doe</strong> | Juni 5, 2016 at 9:24 am | <a href="">Reply</a></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis accusantium corrupti asperiores et praesentium dolore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="review-form">
-            <div class="review-head">
-                <h5>Post Review in Below</h5>
-                <p>Lorem ipsum dolor sit amet consectetur*</p>
-            </div>
-            <div class="row">
-                <form class="col s12 form-details">
-                    <div class="input-field">
-                        <input type="text" required class="validate" placeholder="NAME">
-                    </div>
-                    <div class="input-field">
-                        <input type="email" class="validate" placeholder="EMAIL" required>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" class="validate" placeholder="SUBJECT" required>
-                    </div>
-                    <div class="input-field">
-                        <textarea name="textarea-message" id="textarea1" cols="30" rows="10" class="materialize-textarea" class="validate" placeholder="YOUR REVIEW"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <div class="btn button-default">POST REVIEW</div>
-                    </div>
-                </form>
-            </div>
-        </div>
+
+     
     </div>
 </div>
 <!-- end shop single -->
@@ -453,3 +416,23 @@
 
 </body>
 </html>
+<script>
+    $(function(){
+        $('#addCart').click(function(){
+            var goods_id = $('#goods_id').val();
+            // alert(goods_id);
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url:'addCart',
+                data:{goods_id:goods_id},
+                type:'post',
+                dataType:'json',
+                success:function(res){
+                    console.log(res);
+                }
+            })
+        })
+    })
+</script>
