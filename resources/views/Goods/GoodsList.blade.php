@@ -465,11 +465,7 @@
 
                 <div class="content">
                     <img src="/mstore/img/product-new1.png" alt="">
-<<<<<<< HEAD
-                    <h6><a href="goodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
-=======
-                    <h6><a href="/Goods/GoodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
->>>>>>> 9ca7bcd5147a49352a071da1ecc68a0d7e5dfa4d
+                    <h6><a href="GoodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
                     <div class="price">
                         {{$g->shop_price}}
                     </div>
