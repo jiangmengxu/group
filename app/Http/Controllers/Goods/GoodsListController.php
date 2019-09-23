@@ -12,6 +12,7 @@ class GoodsListController extends Controller
     {
         $page=4;
         $goodsdata = Goods::paginate($page);
+//        dd($goodsdata);
         return view('Goods/GoodsList',['goodsdata'=>$goodsdata]);
     }
 }
