@@ -140,9 +140,5 @@ class LoginController
                 return 3;exit;
         }
     }
-    //展示
-    public function index(Request $request){
-        $res=User::get();
-        return view('Goods/index',['res'=>$res]);
-    } 
+
 }

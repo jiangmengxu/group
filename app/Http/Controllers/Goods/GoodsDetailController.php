@@ -22,9 +22,7 @@ class GoodsDetailController extends Controller
     public function addCart(Request $request)
     {
         $goods_id = $request->goods_id;
-//        dd($data);
 
-        
 //        if(!request()->session()->get('u_id')){
 //            return ['code'=>2,'msg'=>'请登陆后在加入购物车'];
 //        }

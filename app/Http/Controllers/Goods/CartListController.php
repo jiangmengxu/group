@@ -48,7 +48,7 @@ class CartListController extends Controller
         }elseif($buy_number == 0){
             return json_encode(['code'=>0,'msg'=>'购买数量必须大于0']);
         }else{
-            $res = Cart::where(['user_id'=>$user_id,'cart_id',$cart_id])->update(['buy_number'=>$buy_number]);
+            $res = Cart::where(['user_id'=>$user_id,'cart_id'=>$cart_id])->update(['buy_number'=>$buy_number]);
             if($res){
                 return json_encode(['code'=>1,'msg'=>'购买数量修改成功']);
             }
