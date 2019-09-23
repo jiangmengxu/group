@@ -22,8 +22,7 @@ class GoodsDetailController extends Controller
     {
         $goods_id = $request->goods_id;
         $data = Cart::insert($goods_id);
-        dd($data);
-
+//        dd($data);
     }
 
 }
