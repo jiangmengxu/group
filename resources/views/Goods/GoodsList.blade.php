@@ -474,7 +474,7 @@
 
             </div>
             @endforeach
-                {{ $goodsdata->links() }}
+                {{ $goodsdata  ->links() }}
 {{--            <div class="col s6">--}}
 {{--                <div class="content">--}}
 {{--                    <img src="/mstore/img/product-new2.png" alt="">--}}
