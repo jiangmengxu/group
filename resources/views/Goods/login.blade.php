@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="/mstore/css/animate.css">
 	<link rel="stylesheet" href="/mstore/css/style.css">
 	
-	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="shortcut icon" href="/mstore/img/favicon.png">
 
 </head>
 <body>
