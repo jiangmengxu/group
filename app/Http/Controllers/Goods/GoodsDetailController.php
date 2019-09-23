@@ -128,7 +128,7 @@ class GoodsDetailController extends Controller
         }else{
             return true;
         }
->>>>>>> 46cde39163af86edeca91f7fc663bf551e7378cc
+
     }
 
 }
