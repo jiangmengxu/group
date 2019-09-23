@@ -27,14 +27,12 @@ Route::prefix('/Goods')->middleware('Login')->group(function(){
     //Route::any('index',"LoginController@index");
 });
     Route::get('Goods/GoodsList','Goods\\GoodsListController@index');//商品首页
-
     Route::any('Goods/code',"LoginController@code");
     Route::any('Goods/register',"LoginController@register");
     Route::any('Goods/registerdo',"LoginController@registerdo");
     Route::any('Goods/login',"LoginController@login");
     Route::any('logindo',"LoginController@logindo");
     Route::any('registerdo',"LoginController@registerdo");
-    Route::any('index',"LoginController@index");
 
 
 
