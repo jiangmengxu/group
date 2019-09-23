@@ -27,8 +27,8 @@ Route::get('/', function () {
     Route::post('Goods/addCart','Goods\\GoodsDetailController@addCart');   //点击加入购物车
     Route::any('Goods/login',"LoginController@login");
     Route::any('logindo',"LoginController@logindo");
-    Route::any('code',"LoginController@code");
-    Route::any('Goods/register',"LoginController@register");
-    Route::any('registerdo',"LoginController@registerdo");
+    Route::any('Goods/code',"LoginController@code");
+    Route::any('register',"LoginController@register");
+    Route::any('Goods/registerdo',"LoginController@registerdo");
     Route::any('index',"LoginController@index");
 
