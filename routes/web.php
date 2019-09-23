@@ -24,6 +24,7 @@ Route::get('/', function () {
     Route::get('Goods/GoodsList','Goods\\GoodsListController@index');//商品首页
     Route::get('Goods/goodsDetail','Goods\\GoodsDetailController@goodsDetail');//商品详情
     Route::post('Goods/addCart','Goods\\GoodsDetailController@addCart');   //点击加入购物车
+    Route::post('Goods/Checkout','Goods\\GoodsCheckoutController@index');   //点击加入购物车
     Route::any('Goods/login',"LoginController@login");
     Route::any('logindo',"LoginController@logindo");
     Route::any('Goods/code',"LoginController@code");
