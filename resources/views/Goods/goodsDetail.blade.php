@@ -430,7 +430,13 @@
                 type:'post',
                 dataType:'json',
                 success:function(res){
-                    console.log(res);
+                    if(res.code==101){
+                        alert(res.message);
+                        location.href="{{url('/')}}";
+                    }else if(res.code==200){
+                        alert(res.message);
+                        location.href="{{url('Goods/GoodsCart')}}";
+                    }
                 }
             })
         })
