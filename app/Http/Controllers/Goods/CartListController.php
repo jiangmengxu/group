@@ -42,6 +42,8 @@ class CartListController extends Controller
         $goods_number = Goods::where('goods_id',$goods_id)->value('goods_number');
         if($buy_number > $goods_number){
             return json_encode(['code'=>0,'msg'=>'库存不足']);
+        }elseif($buy_number == 0){
+            return json_encode(['code'=>0,'msg'=>'购买数量必须大于0']);
         }else{
             $res = Cart::where('cart_id',$cart_id)->update(['buy_number'=>$buy_number]);
             if($res){
