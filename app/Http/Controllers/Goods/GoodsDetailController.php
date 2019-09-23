@@ -120,7 +120,7 @@ class GoodsDetailController extends Controller
     public  function checkGoodsNumber($buy_number,$goods_number,$alearly_num=0)
     {
         $num = $buy_number+$alearly_num;
-        if($num>$goods_number->goods_number){
+        if($num>$goods_number['goods_number']){
             return false;
         }else{
             return true;
