@@ -42,7 +42,7 @@ class CartListController extends Controller
         $cart_id = $request->cart_id;
         $buy_number = $request->buy_number;
         $goods_id = Cart::where(['user_id'=>$user_id,'cart_id'=>$cart_id])->value('goods_id');
-        $goods_number = Goods::where(['user_id'=>$user_id,'goods_id',$goods_id])->value('goods_number');
+        $goods_number = Goods::where(['goods_id',$goods_id])->value('goods_number');
         if($buy_number > $goods_number){
             return json_encode(['code'=>0,'msg'=>'库存不足']);
         }elseif($buy_number == 0){
