@@ -469,14 +469,14 @@
             });
             // 密码失去焦点
             $('#pwd').blur(function(){
-                reg=/^[0-9a-zA-Z]{6,12}$/;
+                reg=/^[0-9a-zA-Z]{6,20}$/;
                 var that = $(this);
-                if( that.val()==""|| that.val()=="6-12位数字或字母组成")
+                if( that.val()==""|| that.val()=="6-20位数字或字母组成")
                 {
                     alert('请设置您的密码！');
                     return false;
                 }else if(!reg.test($("#admin_pwd").val())){
-                    alert('请输入6-16位数字或字母组成的密码!');
+                    alert('请输入6-20位数字或字母组成的密码!');
                     return false;
                 }
             });

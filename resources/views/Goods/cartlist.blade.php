@@ -370,7 +370,7 @@
                         <h5>Price</h5>
                     </div>
                     <div class="col s7">
-                        <h5 class="shop_price">${{$v['shop_price']}}</h5>
+                        <h5 class="shop_price">${{$v['shop_price']*$v['buy_number']}}</h5>
                     </div>
                 </div>
                 <div class="row">
@@ -392,7 +392,7 @@
                     <h5>{{$v['goods_name']}}</h5>
                 </div>
                 <div class="col s5">
-                    <h5>${{$v['shop_price']}}</h5>
+                    <h5>${{$v['shop_price']}}*{{$v['buy_number']}}={{$v['shop_price']*$v['buy_number']}}</h5>
                 </div>
             </div>
             @endforeach
