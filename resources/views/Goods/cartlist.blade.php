@@ -463,4 +463,8 @@
             dataType:'json'
         });
     });
+
+    $(".btn").blur(function () {
+       location.href="/Goods/Checkout";
+    })
 </script>
