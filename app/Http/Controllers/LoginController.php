@@ -131,8 +131,8 @@ class LoginController
         if(!empty($data)){
             if(decrypt($data->u_pwd)==$request->u_pwd){
                 // 存储数据到 session...
-                return 1;
                 session(['name'=>$request->u_name]);
+                return 1;  
             }else{
                 return 2;exit;
             }
@@ -140,9 +140,5 @@ class LoginController
                 return 3;exit;
         }
     }
-    //展示
-    public function index(Request $request){
-            $res=User::get();
-        return view('Goods/index',['res'=>$res]);
-    } 
+
 }
