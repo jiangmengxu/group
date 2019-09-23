@@ -435,7 +435,7 @@
                         location.href="{{url('/')}}";
                     }else if(res.code==200){
                         alert(res.message);
-                        location.href="{{url('Goods/GoodGart')}}";
+                        location.href="{{url('Goods/GoodsCart')}}";
                     }
                 }
             })
