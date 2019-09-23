@@ -13,9 +13,7 @@ class GoodsDetailController extends Controller
     public function goodsDetail(Request $request)
     {
         $goods_id = $request->goods_id;
-//        dd($goods_id);
         $data = Goods::where(['goods_id'=>$goods_id])->first();
-//        dd($data);
         return view('Goods.goodsDetail',['data'=>$data]);
     }
 
@@ -23,7 +21,6 @@ class GoodsDetailController extends Controller
     public function addCart(Request $request)
     {
         $goods_id = $request->goods_id;
-//        dd($goods_id);
         $data = Cart::insert($goods_id);
         dd($data);
 
