@@ -11,7 +11,7 @@ class GoodsListController extends Controller
     public function index()
     {
         $page=4;
-        $goodsdata = $goods_model::paginate($page);
+        $goodsdata = Goods::paginate($page);
         return view('Goods/GoodsList',['goodsdata'=>$goodsdata]);
     }
 }
