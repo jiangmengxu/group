@@ -20,6 +20,7 @@ Route::prefix('/Goods')->middleware('Login')->group(function(){
     Route::get('CartListDel','Goods\\CartListController@cartListDel');//购物车列表删除
     Route::get('CartListNum','Goods\\CartListController@CartListNum');//购物车列表购买数量
 
+<<<<<<< HEAD
     Route::get('GoodsList','Goods\\GoodsListController@index');//商品首页
     Route::get('GoodsDetail','Goods\\GoodsDetailController@goodsDetail');//商品详情
     Route::get('GoodsCart','Goods\\CartListController@index');
@@ -33,5 +34,8 @@ Route::prefix('/Goods')->middleware('Login')->group(function(){
     Route::any('Goods/registerdo',"LoginController@registerdo");  
     Route::any('Goods/login',"LoginController@login");
     Route::any('logindo',"LoginController@logindo");
+    Route::any('registerdo',"LoginController@registerdo");
     Route::any('index',"LoginController@index");
+
+
 
