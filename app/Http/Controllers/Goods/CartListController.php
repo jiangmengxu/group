@@ -19,7 +19,7 @@ class CartListController extends Controller
             $data[$k]['goods_name'] = Goods::where('goods_id',$v['goods_id'])->value('goods_name');
         }
         foreach($data as $v){
-            $shop_price[] = $v['shop_price'];
+            $shop_price[] = $v['shop_price']*$v['buy_number'];
         }
         $total_price = array_sum($shop_price);
         return view('Goods.cartlist',compact('data','total_price','count'));

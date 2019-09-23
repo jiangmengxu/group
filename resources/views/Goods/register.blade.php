@@ -9,17 +9,17 @@
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="HandheldFriendly" content="True">
 
-	<link rel="stylesheet" href="css/materialize.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.transitions.css">
-	<link rel="stylesheet" href="css/fakeLoader.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
-	
-	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="/mstore/css/materialize.css">
+	<link rel="stylesheet" href="/mstore/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/mstore/css/normalize.css">
+	<link rel="stylesheet" href="/mstore/css/owl.carousel.css">
+	<link rel="stylesheet" href="/mstore/css/owl.theme.css">
+	<link rel="stylesheet" href="/mstore/css/owl.transitions.css">
+	<link rel="stylesheet" href="/mstore/css/fakeLoader.css">
+	<link rel="stylesheet" href="/mstore/css/animate.css">
+	<link rel="stylesheet" href="/mstore/css/style.css">
+
+	<link rel="shortcut icon" href="/mstore/img/favicon.png">
 
 </head>
 <body>
@@ -420,13 +420,12 @@
 	<!-- end footer -->
 	
 	<!-- scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/fakeLoader.min.js"></script>
-	<script src="js/animatedModal.min.js"></script>
-	<script src="js/main.js"></script>
-
+	<script src="/mstore/js/jquery.min.js"></script>
+	<script src="/mstore/js/materialize.min.js"></script>
+	<script src="/mstore/js/owl.carousel.min.js"></script>
+	<script src="/mstore/js/fakeLoader.min.js"></script>
+	<script src="/mstore/js/animatedModal.min.js"></script>
+	<script src="/mstore/js/main.js"></script>
 </body>
 </html>
 <script>
@@ -469,14 +468,14 @@
             });
             // 密码失去焦点
             $('#pwd').blur(function(){
-                reg=/^[0-9a-zA-Z]{6,12}$/;
+                reg=/^[0-9a-zA-Z]{6,20}$/;
                 var that = $(this);
-                if( that.val()==""|| that.val()=="6-12位数字或字母组成")
+                if( that.val()==""|| that.val()=="6-20位数字或字母组成")
                 {
                     alert('请设置您的密码！');
                     return false;
                 }else if(!reg.test($("#admin_pwd").val())){
-                    alert('请输入6-16位数字或字母组成的密码!');
+                    alert('请输入6-20位数字或字母组成的密码!');
                     return false;
                 }
             });
