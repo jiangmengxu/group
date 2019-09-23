@@ -62,12 +62,13 @@ class LoginController
         $verifycode=$request->verifycode;
         $code=session("code");
         //dump($verifycode);
-        //dd($code);
+        //dump($code);
         if($verifycode!=$code){
             return 4;exit;
         }
+        //die;
         $u_tel=$request->u_tel;
-        //dump($g_tel);
+        //dump($u_tel);
         $session_tel=session("g_tel");
         //dump($session_tel);
         //dump($verifycode);die;
