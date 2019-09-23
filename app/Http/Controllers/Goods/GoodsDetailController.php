@@ -22,7 +22,6 @@ class GoodsDetailController extends Controller
     public function addCart(Request $request)
     {
         $goods_id = $request->goods_id;
-        $data = Cart::insert($goods_id);
 //        dd($data);
 
         
