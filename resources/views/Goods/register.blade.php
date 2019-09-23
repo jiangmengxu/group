@@ -501,7 +501,7 @@
                             alert('用户名已注册');
                         } else if (res == 2) {
                             alert('注册成功');
-                            location.href = "{{url('login')}}";
+                            location.href = "{{url('Goods/login')}}";
                         } else if (res == 3) {
                             alert('注册失败');
                         }else if(res==4){

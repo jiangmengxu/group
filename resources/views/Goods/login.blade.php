@@ -379,7 +379,7 @@
 							<input type="password" class="validate" id ="pwd" placeholder="PASSWORD" required>
 						</div>
 						<a href=""><h6>Forgot Password ?</h6></a>
-						<a href="javascripr:;" class="btn button-default" id="login">LOGIN</a>
+						<a href="javascript:;" class="btn button-default" id="login">LOGIN</a>
 					</form>
 				</div>
 			</div>
