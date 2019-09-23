@@ -47,8 +47,8 @@
         <li><a href="setting.html"><i class="fa fa-cog"></i>Settings</a></li>
         <li><a href="about-us.html"><i class="fa fa-user"></i>About Us</a></li>
         <li><a href="contact.html"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
-        <li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
-        <li><a href="register.html"><i class="fa fa-user-plus"></i>Register</a></li>
+        <li><a href="login"><i class="fa fa-sign-in"></i>Login</a></li>
+        <li><a href="register"><i class="fa fa-user-plus"></i>Register</a></li>
     </ul>
 </div>
 <!-- end side nav right-->
@@ -465,11 +465,7 @@
 
                 <div class="content">
                     <img src="/mstore/img/product-new1.png" alt="">
-<<<<<<< HEAD
-                    <h6><a href="goodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
-=======
-                    <h6><a href="/Goods/GoodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
->>>>>>> 9ca7bcd5147a49352a071da1ecc68a0d7e5dfa4d
+                    <h6><a href="GoodsDetail?goods_id={{$g->goods_id}}">{{$g->goods_name}}</a></h6>
                     <div class="price">
                         {{$g->shop_price}}
                     </div>
@@ -478,7 +474,7 @@
 
             </div>
             @endforeach
-                {{ $goodsdata->links() }}
+                {{ $goodsdata  ->links() }}
 {{--            <div class="col s6">--}}
 {{--                <div class="content">--}}
 {{--                    <img src="/mstore/img/product-new2.png" alt="">--}}
